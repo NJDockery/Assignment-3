@@ -17,3 +17,15 @@ main{
 .nobull{
   list-style-type:none;
 }
+h1{
+  background-image: url("Images/banner.jpg");
+  background-repeat:no-repeat;
+  background-position:left;
+  text-align:right;
+}
+ol.ur{
+  list-style-type:upper-roman;
+}
+ol.lr{
+  list-style-type:lower-roman;
+}
