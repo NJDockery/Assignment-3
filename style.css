@@ -1,31 +1,34 @@
 html, body {
   height: 100%;
   width: 100%;
+  background-color: beige;
 }
 header{
-  background-image: url("Images/AssignmentBanner.jpg");
-}
-nav{
-  
-}
-footer{
-  
-}
-main{
-  
-}
-.nobull{
-  list-style-type:none;
-}
-h1{
   background-image: url("Images/banner.jpg");
   background-repeat:no-repeat;
   background-position:left;
   text-align:right;
+  height:250px;
+}
+n{
+  
+}
+f{
+  
+}
+m{
+  
+}
+.nobull{
+  list-style-type:none;
 }
 ol.ur{
   list-style-type:upper-roman;
 }
 ol.lr{
   list-style-type:lower-roman;
+}
+table,th,td{
+  border:1px solid black;
+  border-collapse: collapse;
 }
