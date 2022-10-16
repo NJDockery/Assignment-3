@@ -9,28 +9,35 @@ header{
   background-repeat:no-repeat;
   background-position:left;
   text-align:right;
-  height:250px;
   line-height:200px;
 }
 .h{
   grid-area: h;
   background-color:#f8f8e7;
   color:#016001;
+  border:solid;
+  border-color:black;
 }
 .n{
   grid-area: n;
   background-color:#f8f8e7;
+  border:solid;
+  border-color:black;
 }
 .f{
   grid-area: f;
   background-color:#f8f8e7;
   color:brown;
+  border:solid;
+  border-color:black;
 }
 .m{
   grid-area: m;
   font-family:"Times New Roman",Times,serif;
   background-color:#f8f8e7;
   color:#666704;
+  border:solid;
+  border-color:black;
 }
 .nobull{
   list-style-type:none;
@@ -71,8 +78,8 @@ td{
   width: 100%;
   height: 100%;
   grid-template-areas:
-    "h h h"
-    "n m m"
-    "n m m"
-    "f f f"
+    "h h h h"
+    "n m m m"
+    "n m m m"
+    "f f f f"
 }

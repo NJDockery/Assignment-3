@@ -2,6 +2,7 @@
 <html>
 <section id="page">
 <head>
+<script src="script.js"></script>
 <link rel="stylesheet" href="style.css">
   <title>Assignment 2 Page 3</title>
 </head>
@@ -12,7 +13,34 @@
     </header>
   
     <main class="m">
-        
+      <form  name="myForm" action="https://webdevbasics.net/scripts/yoga.php" onsubmit="return validateForm()" method="post">
+      <label for="fname">First Name:</label><br>
+      <input type="text" placeholder="Enter first name here" maxlength="50" id="fname" name="fname" required><br>
+
+      <label for="lname">Last Name:</label><br>
+      <input type="text" placeholder="Enter last name here" maxlength="50" id="lname" name="lname" required><br>
+
+      <label for="birthYear">Birth Year:</label><br>
+      <input type="number" min="1900" max="2022" id="birthYear" name="birthYear"><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" placeholder="Enter a valid email here" id="email" name="email"><br>
+
+      <label for="username">Username:</label><br>
+      <input type="text" maxlength="10" minlength="5" id="username" name="username"><br>
+
+      <label for="password">Password</label><br>
+      <input type="password" minlength="8" id="password" name="password" required><br>
+      
+      <label for="passwordConfirm">Reenter password:</label><br>
+      <input type="password" id="passwordConfirm" name="passwordConfirm" required><br>
+
+      <label for="phonenum1">Phone number:</label><br>
+      <input name="teliphone number" id="phonenum" name="Phone Number" pattern="[0-9]{10}" placeholder="###-###-####">
+      <p></p>
+      <input type="submit" value="Submit">
+      <input type="reset">
+    </form> 
     </main>
   
   <nav class="n">
