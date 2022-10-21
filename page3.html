@@ -15,44 +15,52 @@
     <main class="m">
       <form  name="myForm" action="https://webdevbasics.net/scripts/yoga.php" onsubmit="return validateForm()" method="post">
       <label for="fname">First Name:</label><br>
-      <input type="text" placeholder="Enter first name here" maxlength="50" id="fname" name="fname" required><br>
+      <div tabindex="6"><input type="text" placeholder="Enter first name here" maxlength="50" id="fname" name="fname"></div><br>
 
       <label for="lname">Last Name:</label><br>
-      <input type="text" placeholder="Enter last name here" maxlength="50" id="lname" name="lname" required><br>
+      <div tabindex="7"><input type="text" placeholder="Enter last name here" maxlength="50" id="lname" name="lname"></div><br>
 
       <label for="birthYear">Birth Year:</label><br>
-      <input type="number" min="1900" max="2022" id="birthYear" name="birthYear"><br>
+      <div tabindex="8"><input type="number" min="1900" max="2022" id="birthYear" name="birthYear"></div><br>
 
       <label for="email">Email:</label><br>
-      <input type="email" placeholder="Enter a valid email here" id="email" name="email"><br>
+      <div tabindex="9"><input type="email" placeholder="Enter a valid email here" id="email" name="email"></div><br>
 
       <label for="username">Username:</label><br>
-      <input type="text" maxlength="10" minlength="5" id="username" name="username"><br>
+      <div tabindex="10"><input type="text" maxlength="10" minlength="5" id="username" name="username" required></div><br>
 
       <label for="password">Password</label><br>
-      <input type="password" minlength="8" id="password" name="password" required><br>
+      <div tabindex="11"><input type="password" minlength="8" id="password" name="password" required></div><br>
       
       <label for="passwordConfirm">Reenter password:</label><br>
-      <input type="password" id="passwordConfirm" name="passwordConfirm" required><br>
+      <div tabindex="12"><input type="password" id="passwordConfirm" name="passwordConfirm" required></div><br>
 
       <label for="phonenum1">Phone number:</label><br>
-      <input name="teliphone number" id="phonenum" name="Phone Number" pattern="[0-9]{10}" placeholder="###-###-####">
+      <div tabindex="13"><input type="tel" input name="teliphone number" id="phonenum1" name="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####"></div>
       <p></p>
-      <input type="submit" value="Submit">
-      <input type="reset">
+      <div tabindex="14"><input type="submit" value="Submit"></div>
+      <div tabindex="15"><input type="reset"></div>
     </form> 
     </main>
   
   <nav class="n">
   <ul class = "nobull">
-    <li><a href=index.html>Home</a></li>
-    <li><a href=page1.html>Page 1</a></li>
-    <li><a href=page2.html>Page 2</a></li>
-    <li><a href=page3.html>Page 3</a></li>
-    <li><a href=https://www.columbusstate.edu/>CSU Home Page</a></li>
+    <li><div tabindex="1"><a href=index.html>Home</a></div></li>
+    <li><div tabindex="2"><a href=page1.html>Page 1</a></div></li>
+    <li><div tabindex="3"><a href=page2.html>Page 2</a></div></li>
+    <li><div tabindex="4"><a href=page3.html>Page 3</a></div></li>
+    <li><div tabindex="5"><a href=https://www.columbusstate.edu/>CSU Home Page</a></div></li>
   </ul>
  </nav>
 
+<aside>
+  <svg width="600" height="400" aria-labledby="star starDesc">
+  <title id="star">Cool Coding Star</title>
+  <desc id="starDesc">A neat little star made using polygon points</desc>
+  <polygon points="200,20 80,396 380,156 20,156 320,396"
+  style="fill:blue;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+</aside>
   
   <footer class="f">
     <ul class = "nobull">

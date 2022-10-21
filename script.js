@@ -1,3 +1,4 @@
+/*tests the password value matches the reentered password value and then tests if the username is already in use*/
 function validateForm(){
   let x = document.getElementById("password").value;
   let y = document.getElementById("passwordConfirm").value;
@@ -12,5 +13,20 @@ else if(usernames.includes(e)){
 else{
   return true;}
   }
-
+/*array of currently used usernames*/
 const usernames=["Harry", "Elizabeth", "Shana"];
+
+/*function to draw the words on page 2*/
+function drawShape(){
+  var canvas = document.getElementById('mycanvas');
+  if(canvas.getContext){
+    var ctx = canvas.getContext('2d');
+    ctx.fillSytle="#00F";
+    ctx.font='Bold 30px Sans-Serif';
+    ctx.strokeText('Coding is Fun!', 40, 100);
+    ctx.fillText('Coding is Fun!', 40, 100);
+  }else{
+    alert('Your Browser does not support this application!')
+  }
+}
+

@@ -2,11 +2,12 @@
 <html>
 <section id="page">
 <head>
+<script src="script.js"></script>
 <link rel="stylesheet" href="style.css">
   <title>Assignment 2 Page 1</title>
 </head>
 
-<body>
+<body onload="drawShape();">
   <header class="h">
     <h1>Assignment 1 Page 1</h1>
   </header>
@@ -32,13 +33,18 @@
   
  <nav class="n">
   <ul class = "nobull">
-    <li><a href=index.html>Home</a></li>
-    <li><a href=page1.html>Page 1</a></li>
-    <li><a href=page2.html>Page 2</a></li>
-    <li><a href=page3.html>Page 3</a></li>
-    <li><a href=https://www.columbusstate.edu/>CSU Home Page</a></li>
+    <li><div tabindex="1"><a href=index.html>Home</a></div></li>
+    <li><div tabindex="2"><a href=page1.html>Page 1</a></div></li>
+    <li><div tabindex="3"><a href=page2.html>Page 2</a></div></li>
+    <li><div tabindex="4"><a href=page3.html>Page 3</a></div></li>
+    <li><div tabindex="5"><a href=https://www.columbusstate.edu/>CSU Home Page</a></div></li>
   </ul>
  </nav>
+
+<aside class="a">
+  <canvas id="mycanvas" width="500" height="200" aria-label="Coding is Fun!" role="img">
+  </canvas>
+</aside>
   
   <footer class="f">
     <ul class = "nobull">
